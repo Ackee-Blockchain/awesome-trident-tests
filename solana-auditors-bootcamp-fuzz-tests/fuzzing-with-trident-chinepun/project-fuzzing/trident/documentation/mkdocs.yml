@@ -1,0 +1,128 @@
+site_name: Trident
+site_url: https://ackee.xyz/trident/docs
+repo_url: https://github.com/Ackee-Blockchain/trident
+repo_name: Ackee-Blockchain/trident
+edit_uri: edit/master/docs
+site_description: Trident is a Rust-based testing framework providing several convenient developer tools for testing Solana programs written in Anchor.
+site_author: Ackee Blockchain
+
+
+nav:
+  - Trident:
+    - index.md
+    - home/home-installation.md
+    - Fuzz Tests:
+      - fuzzing/fuzzing-introduction.md
+      - Initialization:
+          - fuzzing/initialization/fuzzing-initialization-fuzz.md
+          - fuzzing/initialization/fuzzing-initialization-fuzz-add.md
+          - fuzzing/initialization/fuzzing-initialization-all.md
+      - fuzzing/fuzzing-lifecycle.md
+      - How-To write Fuzz Test:
+          - fuzzing/howto/fuzzing-howto-p0.md
+          - fuzzing/howto/fuzzing-howto-p1.md
+          - fuzzing/howto/fuzzing-howto-p2.md
+          - fuzzing/howto/fuzzing-howto-p3.md
+          - fuzzing/howto/fuzzing-howto-p4.md
+          - fuzzing/howto/fuzzing-howto-p5.md
+          - fuzzing/howto/fuzzing-howto-p6.md
+          - fuzzing/howto/fuzzing-howto-p7.md
+      - fuzzing/fuzzing-run-debug.md
+      - fuzzing/fuzzing-current-limitations.md
+      - fuzzing/fuzzing-examples.md
+    - Integration Tests:
+      - integration-tests/poc-introduction.md
+      - Initialization:
+          - integration-tests/initialization/poc-initialization-poc.md
+          - integration-tests/initialization/poc-initialization-program-client.md
+          - integration-tests/initialization/poc-initialization-all.md
+      - How-To write Integration Test:
+          - integration-tests/howto/poc-howto-p0.md
+          - integration-tests/howto/poc-howto-p1.md
+      - integration-tests/poc-run.md
+      - integration-tests/poc-examples.md
+  - CHANGELOG.md
+
+# Beware this is strongly dependent on names of folders , example:
+# images have to be stored within the docs/images folder
+theme:
+  # https://squidfunk.github.io/mkdocs-material/setup/
+  name: material
+  logo: 'images/logo.png'
+  favicon: 'images/favicon.ico'
+  custom_dir: docs/overrides
+  font:
+    text: Inter
+  # https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/?h=palette+sw#color-palette-toggle
+  palette:
+    # Palette toggle for light mode
+    - scheme: default # light mode scheme
+      primary: black
+      toggle:
+        icon: material/lightbulb
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - scheme: slate  # dark mode scheme
+      primary: black
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to light mode
+  features:
+  # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#navigation-tabs
+    - navigation.tabs
+  # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#navigation-expansion
+    - navigation.expand
+  # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#back-to-top-button
+    - navigation.top
+  # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#section-index-pages
+    - navigation.indexes
+  # https://squidfunk.github.io/mkdocs-material/reference/code-blocks/?h=content+copy#code-copy-button
+    - content.code.copy
+  # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#navigation-sections
+    - navigation.sections
+  # may be used 
+    # - navigation.footer
+
+# https://squidfunk.github.io/mkdocs-material/setup/setting-up-the-footer/?h=social#social-links
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Ackee-Blockchain/trident
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/urRbxVcMrB
+    - icon: fontawesome/brands/twitter
+      link: https://x.com/TridentSolana
+# https://squidfunk.github.io/mkdocs-material/setup/setting-up-versioning/
+  version:
+    provider: mike
+
+# https://www.mkdocs.org/user-guide/configuration/#plugins
+plugins:
+  - search
+  - macros
+  - minify:
+      minify_html: true
+  - git-revision-date-localized:
+      type: timeago
+
+# https://squidfunk.github.io/mkdocs-material/customization/?h=extra+css#additional-css
+extra_css:
+  - stylesheets/extra.css
+
+
+markdown_extensions:
+  # https://squidfunk.github.io/mkdocs-material/reference/code-blocks/#code-blocks
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - toc:
+      permalink: "#"
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+exclude_docs: |
+  requirements.txt.

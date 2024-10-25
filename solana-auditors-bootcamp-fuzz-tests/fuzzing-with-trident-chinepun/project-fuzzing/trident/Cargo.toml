@@ -1,0 +1,24 @@
+[workspace]
+members = ["crates/cli", "crates/client", "crates/test", "crates/fuzz"]
+exclude = ["examples/"]
+resolver = "1"
+
+
+[workspace.dependencies]
+# ANCHOR
+anchor-client = ">=0.29.0"
+anchor-syn = ">=0.29.0"
+anchor-lang = ">=0.29.0"
+
+
+# SOLANA
+solana-sdk = ">1.18.4"
+solana-cli-output = ">1.18.4"
+solana-transaction-status = ">1.18.4"
+solana-account-decoder = ">1.18.4"
+solana-program = ">1.18.4"
+solana-banks-client = ">1.18.4"
+solana-program-runtime = ">1.18.4"
+solana-program-test = ">1.18.4"
+spl-associated-token-account = { version = "2", features = ["no-entrypoint"] }
+spl-token = { version = "4", features = ["no-entrypoint"] }

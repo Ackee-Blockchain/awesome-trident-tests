@@ -1,0 +1,780 @@
+=====================================================================
+TIME: 2024-09-15.00:15:40
+=====================================================================
+FUZZER ARGS:
+ mutationsPerRun : 6
+ externalCmd     : NULL
+ fuzzStdin       : FALSE
+ timeout         : 10 (sec)
+ ignoreAddr      : (nil)
+ ASLimit         : 0 (MiB)
+ RSSLimit        : 0 (MiB)
+ DATALimit       : 0 (MiB)
+ wordlistFile    : NULL
+ dynFileMethod   : 
+ fuzzTarget      : trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0 
+CRASH:
+DESCRIPTION: 
+ORIG_FNAME: 537d8129e5aa29ad3d4780f4caedc6a3.0000004e.honggfuzz.cov
+FUZZ_FNAME: trident-tests/fuzz_tests/fuzzing/hfuzz_workspace/fuzz_0/SIGABRT.PC.7ffff7c969fc.STACK.e30df64ec.CODE.-6.ADDR.0.INSTR.mov____%eax,%r13d.fuzz
+PID: 54761
+SIGNAL: SIGABRT (6)
+PC: 0x7ffff7c969fc
+FAULT ADDRESS: 0x0
+INSTRUCTION: mov____%eax,%r13d
+STACK HASH: 0000000e30df64ec
+STACK:
+ <0x00007ffff7c42476> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x00007ffff7c287f3> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x000055555632f67a> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555675609> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555558418c6> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635e77a> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635e4aa> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635e439> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635e426> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555555eb232> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555608e175> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555ee2224> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555687be8> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555681336> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555567db8a> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555567db68> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555632f397> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555567dbbd> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00007ffff7c29d90> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x00007ffff7c29e40> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x000055555567d545> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+=====================================================================
+=====================================================================
+TIME: 2024-09-15.00:24:00
+=====================================================================
+FUZZER ARGS:
+ mutationsPerRun : 6
+ externalCmd     : NULL
+ fuzzStdin       : FALSE
+ timeout         : 10 (sec)
+ ignoreAddr      : (nil)
+ ASLimit         : 0 (MiB)
+ RSSLimit        : 0 (MiB)
+ DATALimit       : 0 (MiB)
+ wordlistFile    : NULL
+ dynFileMethod   : 
+ fuzzTarget      : trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0 
+CRASH:
+DESCRIPTION: 
+ORIG_FNAME: 714c6eeec4a0d3262b800b04acf58003.0000004e.honggfuzz.cov
+FUZZ_FNAME: trident-tests/fuzz_tests/fuzzing/hfuzz_workspace/fuzz_0/SIGABRT.PC.7ffff7c969fc.STACK.e47e2a304.CODE.-6.ADDR.0.INSTR.mov____%eax,%r13d.fuzz
+PID: 61392
+SIGNAL: SIGABRT (6)
+PC: 0x7ffff7c969fc
+FAULT ADDRESS: 0x0
+INSTRUCTION: mov____%eax,%r13d
+STACK HASH: 0000000e47e2a304
+STACK:
+ <0x00007ffff7c42476> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x00007ffff7c287f3> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x000055555632f65a> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555675609> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555558418a6> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635e75a> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635e48a> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635e419> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635e406> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555555eb232> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555608e155> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555ee2204> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555686da1> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555681336> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555567db8a> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555567db68> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555632f377> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555567dbbd> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00007ffff7c29d90> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x00007ffff7c29e40> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x000055555567d545> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+=====================================================================
+=====================================================================
+TIME: 2024-09-15.00:30:33
+=====================================================================
+FUZZER ARGS:
+ mutationsPerRun : 6
+ externalCmd     : NULL
+ fuzzStdin       : FALSE
+ timeout         : 10 (sec)
+ ignoreAddr      : (nil)
+ ASLimit         : 0 (MiB)
+ RSSLimit        : 0 (MiB)
+ DATALimit       : 0 (MiB)
+ wordlistFile    : NULL
+ dynFileMethod   : 
+ fuzzTarget      : trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0 
+CRASH:
+DESCRIPTION: 
+ORIG_FNAME: 3cc0a0dafea9a1b4edae21c8a2c039cc.0000004e.honggfuzz.cov
+FUZZ_FNAME: trident-tests/fuzz_tests/fuzzing/hfuzz_workspace/fuzz_0/SIGABRT.PC.7ffff7c969fc.STACK.e453ceb0d.CODE.-6.ADDR.0.INSTR.mov____%eax,%r13d.fuzz
+PID: 66315
+SIGNAL: SIGABRT (6)
+PC: 0x7ffff7c969fc
+FAULT ADDRESS: 0x0
+INSTRUCTION: mov____%eax,%r13d
+STACK HASH: 0000000e453ceb0d
+STACK:
+ <0x00007ffff7c42476> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x00007ffff7c287f3> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x000055555632f64a> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555675609> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555841896> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635e74a> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635e47a> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635e409> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635e3f6> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555555eb232> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555608e145> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555ee21f4> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555687bb8> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555681336> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555567db8a> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555567db68> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555632f367> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555567dbbd> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00007ffff7c29d90> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x00007ffff7c29e40> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x000055555567d545> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+=====================================================================
+=====================================================================
+TIME: 2024-09-15.00:32:05
+=====================================================================
+FUZZER ARGS:
+ mutationsPerRun : 6
+ externalCmd     : NULL
+ fuzzStdin       : FALSE
+ timeout         : 10 (sec)
+ ignoreAddr      : (nil)
+ ASLimit         : 0 (MiB)
+ RSSLimit        : 0 (MiB)
+ DATALimit       : 0 (MiB)
+ wordlistFile    : NULL
+ dynFileMethod   : 
+ fuzzTarget      : trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0 
+CRASH:
+DESCRIPTION: 
+ORIG_FNAME: 537d8129e5aa29ad3d4780f4caedc6a3.0000004e.honggfuzz.cov
+FUZZ_FNAME: trident-tests/fuzz_tests/fuzzing/hfuzz_workspace/fuzz_0/SIGABRT.PC.7ffff7c969fc.STACK.e453ceb0d.CODE.-6.ADDR.0.INSTR.mov____%eax,%r13d.fuzz
+PID: 67459
+SIGNAL: SIGABRT (6)
+PC: 0x7ffff7c969fc
+FAULT ADDRESS: 0x0
+INSTRUCTION: mov____%eax,%r13d
+STACK HASH: 0000000e453ceb0d
+STACK:
+ <0x00007ffff7c42476> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x00007ffff7c287f3> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x000055555632f64a> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555675609> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555841896> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635e74a> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635e47a> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635e409> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635e3f6> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555555eb232> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555608e145> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555ee21f4> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555687bb8> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555681336> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555567db8a> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555567db68> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555632f367> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555567dbbd> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00007ffff7c29d90> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x00007ffff7c29e40> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x000055555567d545> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+=====================================================================
+=====================================================================
+TIME: 2024-09-15.11:21:12
+=====================================================================
+FUZZER ARGS:
+ mutationsPerRun : 6
+ externalCmd     : NULL
+ fuzzStdin       : FALSE
+ timeout         : 10 (sec)
+ ignoreAddr      : (nil)
+ ASLimit         : 0 (MiB)
+ RSSLimit        : 0 (MiB)
+ DATALimit       : 0 (MiB)
+ wordlistFile    : NULL
+ dynFileMethod   : 
+ fuzzTarget      : trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0 
+CRASH:
+DESCRIPTION: 
+ORIG_FNAME: ea8598731b202f036d527dd80c2b0c40.0000007c.honggfuzz.cov
+FUZZ_FNAME: trident-tests/fuzz_tests/fuzzing/hfuzz_workspace/fuzz_0/SIGABRT.PC.7ffff7c969fc.STACK.d594d4dc4.CODE.-6.ADDR.0.INSTR.mov____%eax,%r13d.fuzz
+PID: 177597
+SIGNAL: SIGABRT (6)
+PC: 0x7ffff7c969fc
+FAULT ADDRESS: 0x0
+INSTRUCTION: mov____%eax,%r13d
+STACK HASH: 0000000d594d4dc4
+STACK:
+ <0x00007ffff7c42476> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x00007ffff7c287f3> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x000055555632f7ca> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555556755c9> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555558419f6> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635e8ca> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635e632> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635e589> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635e576> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555555eb1f2> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555555eb6a5> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555571fdce> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555570ee36> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555570b68a> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555570b668> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555632f4e7> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555570b6bd> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00007ffff7c29d90> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x00007ffff7c29e40> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x000055555567d505> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+=====================================================================
+=====================================================================
+TIME: 2024-09-15.12:35:07
+=====================================================================
+FUZZER ARGS:
+ mutationsPerRun : 6
+ externalCmd     : NULL
+ fuzzStdin       : FALSE
+ timeout         : 10 (sec)
+ ignoreAddr      : (nil)
+ ASLimit         : 0 (MiB)
+ RSSLimit        : 0 (MiB)
+ DATALimit       : 0 (MiB)
+ wordlistFile    : NULL
+ dynFileMethod   : 
+ fuzzTarget      : trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0 
+CRASH:
+DESCRIPTION: 
+ORIG_FNAME: 714c6eeec4a0d3262b800b04acf58003.0000004e.honggfuzz.cov
+FUZZ_FNAME: trident-tests/fuzz_tests/fuzzing/hfuzz_workspace/fuzz_0/SIGABRT.PC.7ffff7c969fc.STACK.e2e55c93c.CODE.-6.ADDR.0.INSTR.mov____%eax,%r13d.fuzz
+PID: 231502
+SIGNAL: SIGABRT (6)
+PC: 0x7ffff7c969fc
+FAULT ADDRESS: 0x0
+INSTRUCTION: mov____%eax,%r13d
+STACK HASH: 0000000e2e55c93c
+STACK:
+ <0x00007ffff7c42476> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x00007ffff7c287f3> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x000055555633063a> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555675609> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555842866> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635f73a> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635f4a2> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635f3f9> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635f3e6> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555555eb232> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555555eb6e5> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555720bc0> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555570ee76> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555570b6ca> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555570b6a8> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555556330357> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555570b6fd> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00007ffff7c29d90> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x00007ffff7c29e40> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x000055555567d545> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+=====================================================================
+=====================================================================
+TIME: 2024-09-15.12:35:43
+=====================================================================
+FUZZER ARGS:
+ mutationsPerRun : 6
+ externalCmd     : NULL
+ fuzzStdin       : FALSE
+ timeout         : 10 (sec)
+ ignoreAddr      : (nil)
+ ASLimit         : 0 (MiB)
+ RSSLimit        : 0 (MiB)
+ DATALimit       : 0 (MiB)
+ wordlistFile    : NULL
+ dynFileMethod   : 
+ fuzzTarget      : trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0 
+CRASH:
+DESCRIPTION: 
+ORIG_FNAME: 537d8129e5aa29ad3d4780f4caedc6a3.0000004e.honggfuzz.cov
+FUZZ_FNAME: trident-tests/fuzz_tests/fuzzing/hfuzz_workspace/fuzz_0/SIGABRT.PC.7ffff7c969fc.STACK.e2e55c93c.CODE.-6.ADDR.0.INSTR.mov____%eax,%r13d.fuzz
+PID: 232051
+SIGNAL: SIGABRT (6)
+PC: 0x7ffff7c969fc
+FAULT ADDRESS: 0x0
+INSTRUCTION: mov____%eax,%r13d
+STACK HASH: 0000000e2e55c93c
+STACK:
+ <0x00007ffff7c42476> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x00007ffff7c287f3> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x000055555633063a> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555675609> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555842866> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635f73a> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635f4a2> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635f3f9> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635f3e6> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555555eb232> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555555eb6e5> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555720bc0> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555570ee76> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555570b6ca> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555570b6a8> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555556330357> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555570b6fd> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00007ffff7c29d90> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x00007ffff7c29e40> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x000055555567d545> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+=====================================================================
+=====================================================================
+TIME: 2024-09-15.14:15:54
+=====================================================================
+FUZZER ARGS:
+ mutationsPerRun : 6
+ externalCmd     : NULL
+ fuzzStdin       : FALSE
+ timeout         : 10 (sec)
+ ignoreAddr      : (nil)
+ ASLimit         : 0 (MiB)
+ RSSLimit        : 0 (MiB)
+ DATALimit       : 0 (MiB)
+ wordlistFile    : NULL
+ dynFileMethod   : 
+ fuzzTarget      : trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0 
+CRASH:
+DESCRIPTION: 
+ORIG_FNAME: fbcab185efd16abc07076e6d7517dff4.0000004a.honggfuzz.cov
+FUZZ_FNAME: trident-tests/fuzz_tests/fuzzing/hfuzz_workspace/fuzz_0/SIGABRT.PC.7ffff7c969fc.STACK.18b42de111.CODE.-6.ADDR.0.INSTR.mov____%eax,%r13d.fuzz
+PID: 301146
+SIGNAL: SIGABRT (6)
+PC: 0x7ffff7c969fc
+FAULT ADDRESS: 0x0
+INSTRUCTION: mov____%eax,%r13d
+STACK HASH: 00000018b42de111
+STACK:
+ <0x00007ffff7c42476> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x00007ffff7c287f3> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x00005555563300ba> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555675649> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555558422e6> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635f1ba> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635eeea> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635ee79> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635ee66> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555555eb272> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555555eb404> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555592aef1> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555559285f1> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555556088eca> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555557113fc> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555603352a> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555556226693> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555624bb60> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555dcd2f5> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555dc7910> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555dc7633> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555563611bb> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00007ffff7c94ac3> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x00007ffff7d26850> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+=====================================================================
+=====================================================================
+TIME: 2024-09-15.17:29:19
+=====================================================================
+FUZZER ARGS:
+ mutationsPerRun : 6
+ externalCmd     : NULL
+ fuzzStdin       : FALSE
+ timeout         : 10 (sec)
+ ignoreAddr      : (nil)
+ ASLimit         : 0 (MiB)
+ RSSLimit        : 0 (MiB)
+ DATALimit       : 0 (MiB)
+ wordlistFile    : NULL
+ dynFileMethod   : 
+ fuzzTarget      : trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0 
+CRASH:
+DESCRIPTION: 
+ORIG_FNAME: 82b2e808affe79933b9e5e9ffdb5438e.00000046.honggfuzz.cov
+FUZZ_FNAME: trident-tests/fuzz_tests/fuzzing/hfuzz_workspace/fuzz_0/SIGABRT.PC.7ffff7c969fc.STACK.18b35800ae.CODE.-6.ADDR.0.INSTR.mov____%eax,%r13d.fuzz
+PID: 386207
+SIGNAL: SIGABRT (6)
+PC: 0x7ffff7c969fc
+FAULT ADDRESS: 0x0
+INSTRUCTION: mov____%eax,%r13d
+STACK HASH: 00000018b35800ae
+STACK:
+ <0x00007ffff7c42476> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x00007ffff7c287f3> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x000055555633011a> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555675649> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555842346> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635f21a> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635ef4a> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635eed9> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635eec6> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555555eb272> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555555eb404> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555592af51> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555928651> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555556088f2a> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555571145c> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555603358a> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555562266f3> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555624bbc0> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555dcd355> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555dc7970> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555dc7693> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555636121b> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00007ffff7c94ac3> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x00007ffff7d26850> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+=====================================================================
+=====================================================================
+TIME: 2024-09-15.20:04:01
+=====================================================================
+FUZZER ARGS:
+ mutationsPerRun : 6
+ externalCmd     : NULL
+ fuzzStdin       : FALSE
+ timeout         : 10 (sec)
+ ignoreAddr      : (nil)
+ ASLimit         : 0 (MiB)
+ RSSLimit        : 0 (MiB)
+ DATALimit       : 0 (MiB)
+ wordlistFile    : NULL
+ dynFileMethod   : 
+ fuzzTarget      : trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0 
+CRASH:
+DESCRIPTION: 
+ORIG_FNAME: e2fb37bdea7134e9ecf39ecacf24c6a3.0000006a.honggfuzz.cov
+FUZZ_FNAME: trident-tests/fuzz_tests/fuzzing/hfuzz_workspace/fuzz_0/SIGABRT.PC.7ffff7c969fc.STACK.18b42de111.CODE.-6.ADDR.0.INSTR.mov____%eax,%r13d.fuzz
+PID: 500024
+SIGNAL: SIGABRT (6)
+PC: 0x7ffff7c969fc
+FAULT ADDRESS: 0x0
+INSTRUCTION: mov____%eax,%r13d
+STACK HASH: 00000018b42de111
+STACK:
+ <0x00007ffff7c42476> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x00007ffff7c287f3> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x00005555563300ba> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555675649> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555558422e6> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635f1ba> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635eeea> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635ee79> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635ee66> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555555eb272> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555555eb404> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555592aef1> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555559285f1> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555556088eca> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555557113fc> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555603352a> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555556226693> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555624bb60> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555dcd2f5> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555dc7910> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555dc7633> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555563611bb> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00007ffff7c94ac3> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x00007ffff7d26850> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+=====================================================================
+=====================================================================
+TIME: 2024-09-16.09:08:36
+=====================================================================
+FUZZER ARGS:
+ mutationsPerRun : 6
+ externalCmd     : NULL
+ fuzzStdin       : FALSE
+ timeout         : 10 (sec)
+ ignoreAddr      : (nil)
+ ASLimit         : 0 (MiB)
+ RSSLimit        : 0 (MiB)
+ DATALimit       : 0 (MiB)
+ wordlistFile    : NULL
+ dynFileMethod   : 
+ fuzzTarget      : trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0 
+CRASH:
+DESCRIPTION: 
+ORIG_FNAME: e2fb37bdea7134e9ecf39ecacf24c6a3.0000006a.honggfuzz.cov
+FUZZ_FNAME: trident-tests/fuzz_tests/fuzzing/hfuzz_workspace/fuzz_0/SIGABRT.PC.7ffff7c969fc.STACK.18b4e00883.CODE.-6.ADDR.0.INSTR.mov____%eax,%r13d.fuzz
+PID: 768646
+SIGNAL: SIGABRT (6)
+PC: 0x7ffff7c969fc
+FAULT ADDRESS: 0x0
+INSTRUCTION: mov____%eax,%r13d
+STACK HASH: 00000018b4e00883
+STACK:
+ <0x00007ffff7c42476> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x00007ffff7c287f3> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x000055555633014a> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555675649> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555842376> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635f24a> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635ef7a> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635ef09> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635eef6> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555555eb272> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555555eb404> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555592af81> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555928681> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555556088f5a> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555557113fc> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555560335ba> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555556226723> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555624bbf0> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555dcd385> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555dc79a0> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555dc76c3> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555636124b> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00007ffff7c94ac3> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x00007ffff7d26850> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+=====================================================================
+=====================================================================
+TIME: 2024-09-16.09:59:42
+=====================================================================
+FUZZER ARGS:
+ mutationsPerRun : 6
+ externalCmd     : NULL
+ fuzzStdin       : FALSE
+ timeout         : 10 (sec)
+ ignoreAddr      : (nil)
+ ASLimit         : 0 (MiB)
+ RSSLimit        : 0 (MiB)
+ DATALimit       : 0 (MiB)
+ wordlistFile    : NULL
+ dynFileMethod   : 
+ fuzzTarget      : trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0 
+CRASH:
+DESCRIPTION: 
+ORIG_FNAME: e2fb37bdea7134e9ecf39ecacf24c6a3.0000006a.honggfuzz.cov
+FUZZ_FNAME: trident-tests/fuzz_tests/fuzzing/hfuzz_workspace/fuzz_0/SIGABRT.PC.7ffff7c969fc.STACK.18b4e00883.CODE.-6.ADDR.0.INSTR.mov____%eax,%r13d.fuzz
+PID: 804006
+SIGNAL: SIGABRT (6)
+PC: 0x7ffff7c969fc
+FAULT ADDRESS: 0x0
+INSTRUCTION: mov____%eax,%r13d
+STACK HASH: 00000018b4e00883
+STACK:
+ <0x00007ffff7c42476> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x00007ffff7c287f3> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x000055555633014a> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555675649> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555842376> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635f24a> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635ef7a> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635ef09> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635eef6> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555555eb272> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555555eb404> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555592af81> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555928681> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555556088f5a> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555557113fc> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555560335ba> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555556226723> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555624bbf0> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555dcd385> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555dc79a0> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555dc76c3> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555636124b> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00007ffff7c94ac3> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x00007ffff7d26850> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+=====================================================================
+=====================================================================
+TIME: 2024-09-16.10:53:25
+=====================================================================
+FUZZER ARGS:
+ mutationsPerRun : 6
+ externalCmd     : NULL
+ fuzzStdin       : FALSE
+ timeout         : 10 (sec)
+ ignoreAddr      : (nil)
+ ASLimit         : 0 (MiB)
+ RSSLimit        : 0 (MiB)
+ DATALimit       : 0 (MiB)
+ wordlistFile    : NULL
+ dynFileMethod   : 
+ fuzzTarget      : trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0 
+CRASH:
+DESCRIPTION: 
+ORIG_FNAME: 4d59167684f162def2a045d96a8d261b.00000061.honggfuzz.cov
+FUZZ_FNAME: trident-tests/fuzz_tests/fuzzing/hfuzz_workspace/fuzz_0/SIGABRT.PC.7ffff7c969fc.STACK.c3905ec36.CODE.-6.ADDR.0.INSTR.mov____%eax,%r13d.fuzz
+PID: 842599
+SIGNAL: SIGABRT (6)
+PC: 0x7ffff7c969fc
+FAULT ADDRESS: 0x0
+INSTRUCTION: mov____%eax,%r13d
+STACK HASH: 0000000c3905ec36
+STACK:
+ <0x00007ffff7c42476> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x00007ffff7c287f3> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x00005555563302fa> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555675649> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555842526> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635f3fa> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635f162> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635f0b9> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635f0a6> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555555eb272> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555573b4e7> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555555e7846> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555722497> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555570eeb6> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555570b70a> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555570b6e8> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555556330017> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555570b73d> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00007ffff7c29d90> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x00007ffff7c29e40> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x000055555567d585> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+=====================================================================
+=====================================================================
+TIME: 2024-09-16.11:05:17
+=====================================================================
+FUZZER ARGS:
+ mutationsPerRun : 6
+ externalCmd     : NULL
+ fuzzStdin       : FALSE
+ timeout         : 10 (sec)
+ ignoreAddr      : (nil)
+ ASLimit         : 0 (MiB)
+ RSSLimit        : 0 (MiB)
+ DATALimit       : 0 (MiB)
+ wordlistFile    : NULL
+ dynFileMethod   : 
+ fuzzTarget      : trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0 
+CRASH:
+DESCRIPTION: 
+ORIG_FNAME: 8635d9d172da99aa39e449744fe7bf7d.00000090.honggfuzz.cov
+FUZZ_FNAME: trident-tests/fuzz_tests/fuzzing/hfuzz_workspace/fuzz_0/SIGABRT.PC.7ffff7c969fc.STACK.dbd6cfb13.CODE.-6.ADDR.0.INSTR.mov____%eax,%r13d.fuzz
+PID: 850940
+SIGNAL: SIGABRT (6)
+PC: 0x7ffff7c969fc
+FAULT ADDRESS: 0x0
+INSTRUCTION: mov____%eax,%r13d
+STACK HASH: 0000000dbd6cfb13
+STACK:
+ <0x00007ffff7c42476> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x00007ffff7c287f3> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x000055555633030a> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555675649> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555842536> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635f40a> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635f172> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635f0c9> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635f0b6> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555555eb272> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555573b4f7> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555555e7846> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555557224a7> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555570eeb6> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555570b70a> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555570b6e8> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555556330027> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555570b73d> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00007ffff7c29d90> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x00007ffff7c29e40> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x000055555567d585> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+=====================================================================
+=====================================================================
+TIME: 2024-09-16.11:15:19
+=====================================================================
+FUZZER ARGS:
+ mutationsPerRun : 6
+ externalCmd     : NULL
+ fuzzStdin       : FALSE
+ timeout         : 10 (sec)
+ ignoreAddr      : (nil)
+ ASLimit         : 0 (MiB)
+ RSSLimit        : 0 (MiB)
+ DATALimit       : 0 (MiB)
+ wordlistFile    : NULL
+ dynFileMethod   : 
+ fuzzTarget      : trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0 
+CRASH:
+DESCRIPTION: 
+ORIG_FNAME: 8635d9d172da99aa39e449744fe7bf7d.00000090.honggfuzz.cov
+FUZZ_FNAME: trident-tests/fuzz_tests/fuzzing/hfuzz_workspace/fuzz_0/SIGABRT.PC.7ffff7c969fc.STACK.c0c3a86b9.CODE.-6.ADDR.0.INSTR.mov____%eax,%r13d.fuzz
+PID: 858171
+SIGNAL: SIGABRT (6)
+PC: 0x7ffff7c969fc
+FAULT ADDRESS: 0x0
+INSTRUCTION: mov____%eax,%r13d
+STACK HASH: 0000000c0c3a86b9
+STACK:
+ <0x00007ffff7c42476> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x00007ffff7c287f3> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x00005555563302aa> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555675649> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555558424d6> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635f3aa> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635f112> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635f069> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635f056> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555555eb272> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555573b497> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555555e7846> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555572244c> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555570eeb6> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555570b70a> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555570b6e8> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555632ffc7> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555570b73d> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00007ffff7c29d90> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x00007ffff7c29e40> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x000055555567d585> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+=====================================================================
+=====================================================================
+TIME: 2024-09-16.11:27:45
+=====================================================================
+FUZZER ARGS:
+ mutationsPerRun : 6
+ externalCmd     : NULL
+ fuzzStdin       : FALSE
+ timeout         : 10 (sec)
+ ignoreAddr      : (nil)
+ ASLimit         : 0 (MiB)
+ RSSLimit        : 0 (MiB)
+ DATALimit       : 0 (MiB)
+ wordlistFile    : NULL
+ dynFileMethod   : 
+ fuzzTarget      : trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0 
+CRASH:
+DESCRIPTION: 
+ORIG_FNAME: 4d59167684f162def2a045d96a8d261b.00000061.honggfuzz.cov
+FUZZ_FNAME: trident-tests/fuzz_tests/fuzzing/hfuzz_workspace/fuzz_0/SIGABRT.PC.7ffff7c969fc.STACK.dbd6cfb13.CODE.-6.ADDR.0.INSTR.mov____%eax,%r13d.fuzz
+PID: 867141
+SIGNAL: SIGABRT (6)
+PC: 0x7ffff7c969fc
+FAULT ADDRESS: 0x0
+INSTRUCTION: mov____%eax,%r13d
+STACK HASH: 0000000dbd6cfb13
+STACK:
+ <0x00007ffff7c42476> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x00007ffff7c287f3> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x000055555633030a> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555675649> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555842536> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635f40a> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635f172> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635f0c9> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555635f0b6> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555555eb272> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555573b4f7> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555555e7846> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555557224a4> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555570eeb6> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555570b70a> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555570b6e8> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555556330027> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555570b73d> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00007ffff7c29d90> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x00007ffff7c29e40> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc.so.6]
+ <0x000055555567d585> [func:UNKNOWN file: line:0 module:/home/chinedum/OSC/solana_sec/raydium-cp-swap/fuzzing-with-trident-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+=====================================================================

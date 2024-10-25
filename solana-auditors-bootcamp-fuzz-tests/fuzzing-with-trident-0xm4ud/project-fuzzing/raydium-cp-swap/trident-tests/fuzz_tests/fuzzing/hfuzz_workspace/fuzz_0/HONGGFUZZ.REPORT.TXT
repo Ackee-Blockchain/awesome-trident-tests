@@ -1,0 +1,144 @@
+=====================================================================
+TIME: 2024-09-14.18:08:17
+=====================================================================
+FUZZER ARGS:
+ mutationsPerRun : 6
+ externalCmd     : NULL
+ fuzzStdin       : FALSE
+ timeout         : 10 (sec)
+ ignoreAddr      : (nil)
+ ASLimit         : 0 (MiB)
+ RSSLimit        : 0 (MiB)
+ DATALimit       : 0 (MiB)
+ wordlistFile    : NULL
+ dynFileMethod   : 
+ fuzzTarget      : trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0 
+CRASH:
+DESCRIPTION: 
+ORIG_FNAME: bb36aa6ce472f259770adb5ca2360792.00000199.honggfuzz.cov
+FUZZ_FNAME: trident-tests/fuzz_tests/fuzzing/hfuzz_workspace/fuzz_0/SIGABRT.PC.7ffff7c7100b.STACK.18d32a6746.CODE.-6.ADDR.0.INSTR.mov____0x108(%rsp),%rax.fuzz
+PID: 38814
+SIGNAL: SIGABRT (6)
+PC: 0x7ffff7c7100b
+FAULT ADDRESS: 0x0
+INSTRUCTION: mov____0x108(%rsp),%rax
+STACK HASH: 00000018d32a6746
+STACK:
+ <0x00007ffff7c50859> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+ <0x000055555633ae6a> [func:UNKNOWN file: line:0 module:/home/m4ud/new/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555556729c9> [func:UNKNOWN file: line:0 module:/home/m4ud/new/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555853cd6> [func:UNKNOWN file: line:0 module:/home/m4ud/new/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555556369fca> [func:UNKNOWN file: line:0 module:/home/m4ud/new/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555556369cfa> [func:UNKNOWN file: line:0 module:/home/m4ud/new/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555556369c89> [func:UNKNOWN file: line:0 module:/home/m4ud/new/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555556369c76> [func:UNKNOWN file: line:0 module:/home/m4ud/new/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555555e8ae2> [func:UNKNOWN file: line:0 module:/home/m4ud/new/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555555e8c74> [func:UNKNOWN file: line:0 module:/home/m4ud/new/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555555e9028> [func:UNKNOWN file: line:0 module:/home/m4ud/new/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555594511b> [func:UNKNOWN file: line:0 module:/home/m4ud/new/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555593a643> [func:UNKNOWN file: line:0 module:/home/m4ud/new/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555680659> [func:UNKNOWN file: line:0 module:/home/m4ud/new/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555556040b8a> [func:UNKNOWN file: line:0 module:/home/m4ud/new/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555623148c> [func:UNKNOWN file: line:0 module:/home/m4ud/new/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555556256970> [func:UNKNOWN file: line:0 module:/home/m4ud/new/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555dd9445> [func:UNKNOWN file: line:0 module:/home/m4ud/new/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555dd3aa0> [func:UNKNOWN file: line:0 module:/home/m4ud/new/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555dd37c3> [func:UNKNOWN file: line:0 module:/home/m4ud/new/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555636bfab> [func:UNKNOWN file: line:0 module:/home/m4ud/new/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00007ffff7f7d609> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libpthread-2.31.so]
+ <0x00007ffff7d4d353> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+=====================================================================
+=====================================================================
+TIME: 2024-09-14.18:19:14
+=====================================================================
+FUZZER ARGS:
+ mutationsPerRun : 6
+ externalCmd     : NULL
+ fuzzStdin       : FALSE
+ timeout         : 10 (sec)
+ ignoreAddr      : (nil)
+ ASLimit         : 0 (MiB)
+ RSSLimit        : 0 (MiB)
+ DATALimit       : 0 (MiB)
+ wordlistFile    : NULL
+ dynFileMethod   : 
+ fuzzTarget      : trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0 
+CRASH:
+DESCRIPTION: 
+ORIG_FNAME: bb36aa6ce472f259770adb5ca2360792.00000199.honggfuzz.cov
+FUZZ_FNAME: trident-tests/fuzz_tests/fuzzing/hfuzz_workspace/fuzz_0/SIGABRT.PC.7ffff7c7100b.STACK.dcfe24987.CODE.-6.ADDR.0.INSTR.mov____0x108(%rsp),%rax.fuzz
+PID: 40410
+SIGNAL: SIGABRT (6)
+PC: 0x7ffff7c7100b
+FAULT ADDRESS: 0x0
+INSTRUCTION: mov____0x108(%rsp),%rax
+STACK HASH: 0000000dcfe24987
+STACK:
+ <0x00007ffff7c50859> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+ <0x000055555633af3a> [func:UNKNOWN file: line:0 module:/home/m4ud/new/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555556729c9> [func:UNKNOWN file: line:0 module:/home/m4ud/new/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555853cd6> [func:UNKNOWN file: line:0 module:/home/m4ud/new/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555636a09a> [func:UNKNOWN file: line:0 module:/home/m4ud/new/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555556369dca> [func:UNKNOWN file: line:0 module:/home/m4ud/new/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555556369d59> [func:UNKNOWN file: line:0 module:/home/m4ud/new/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555556369d46> [func:UNKNOWN file: line:0 module:/home/m4ud/new/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555555e8ae2> [func:UNKNOWN file: line:0 module:/home/m4ud/new/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555555e8c74> [func:UNKNOWN file: line:0 module:/home/m4ud/new/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555555e9028> [func:UNKNOWN file: line:0 module:/home/m4ud/new/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555559451d2> [func:UNKNOWN file: line:0 module:/home/m4ud/new/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555593a643> [func:UNKNOWN file: line:0 module:/home/m4ud/new/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555680659> [func:UNKNOWN file: line:0 module:/home/m4ud/new/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555556040c5a> [func:UNKNOWN file: line:0 module:/home/m4ud/new/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555623155c> [func:UNKNOWN file: line:0 module:/home/m4ud/new/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555556256a40> [func:UNKNOWN file: line:0 module:/home/m4ud/new/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555dd9515> [func:UNKNOWN file: line:0 module:/home/m4ud/new/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555dd3b70> [func:UNKNOWN file: line:0 module:/home/m4ud/new/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555dd3893> [func:UNKNOWN file: line:0 module:/home/m4ud/new/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555636c07b> [func:UNKNOWN file: line:0 module:/home/m4ud/new/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00007ffff7f7d609> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libpthread-2.31.so]
+ <0x00007ffff7d4d353> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+=====================================================================
+=====================================================================
+TIME: 2024-09-16.11:15:45
+=====================================================================
+FUZZER ARGS:
+ mutationsPerRun : 6
+ externalCmd     : NULL
+ fuzzStdin       : FALSE
+ timeout         : 10 (sec)
+ ignoreAddr      : (nil)
+ ASLimit         : 0 (MiB)
+ RSSLimit        : 0 (MiB)
+ DATALimit       : 0 (MiB)
+ wordlistFile    : NULL
+ dynFileMethod   : 
+ fuzzTarget      : trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0 
+CRASH:
+DESCRIPTION: 
+ORIG_FNAME: bb36aa6ce472f259770adb5ca2360792.00000199.honggfuzz.cov
+FUZZ_FNAME: trident-tests/fuzz_tests/fuzzing/hfuzz_workspace/fuzz_0/SIGABRT.PC.7ffff7c7100b.STACK.18949be8be.CODE.-6.ADDR.0.INSTR.mov____0x108(%rsp),%rax.fuzz
+PID: 9099
+SIGNAL: SIGABRT (6)
+PC: 0x7ffff7c7100b
+FAULT ADDRESS: 0x0
+INSTRUCTION: mov____0x108(%rsp),%rax
+STACK HASH: 00000018949be8be
+STACK:
+ <0x00007ffff7c50859> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+ <0x000055555633a9ba> [func:UNKNOWN file: line:0 module:/home/m4ud/new/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555672989> [func:UNKNOWN file: line:0 module:/home/m4ud/new/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555555853756> [func:UNKNOWN file: line:0 module:/home/m4ud/new/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x0000555556369b1a> [func:UNKNOWN file: line:0 module:/home/m4ud/new/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555636984a> [func:UNKNOWN file: line:0 module:/home/m4ud/new/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555563697d9> [func:UNKNOWN file: line:0 module:/home/m4ud/new/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555563697c6> [func:UNKNOWN file: line:0 module:/home/m4ud/new/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00005555555e8aa2> [func:UNKNOWN file: line:0 module:/home/m4ud/new/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555567e07e> [func:UNKNOWN file: line:0 module:/home/m4ud/new/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555567c117> [func:UNKNOWN file: line:0 module:/home/m4ud/new/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555567b99a> [func:UNKNOWN file: line:0 module:/home/m4ud/new/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555567b978> [func:UNKNOWN file: line:0 module:/home/m4ud/new/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555633a6d7> [func:UNKNOWN file: line:0 module:/home/m4ud/new/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x000055555567b9cd> [func:UNKNOWN file: line:0 module:/home/m4ud/new/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+ <0x00007ffff7c52083> [func:UNKNOWN file: line:0 module:/usr/lib/x86_64-linux-gnu/libc-2.31.so]
+ <0x000055555567a8ce> [func:UNKNOWN file: line:0 module:/home/m4ud/new/raydium-cp-swap/trident-tests/fuzz_tests/fuzzing/hfuzz_target/x86_64-unknown-linux-gnu/release/fuzz_0]
+=====================================================================

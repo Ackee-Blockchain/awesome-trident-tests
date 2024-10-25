@@ -1,0 +1,78 @@
+on:
+  workflow_dispatch:
+  pull_request:
+  push:
+    branches: [master]
+
+name: Lint crates
+
+jobs:
+  checks:
+    runs-on: ubuntu-20.04
+    needs:
+      - cli
+      - client
+      - test
+    steps:
+      - run: echo "Done"
+  cli:
+    runs-on: ubuntu-20.04
+    defaults:
+      run:
+        working-directory: crates/cli
+    steps:
+      - uses: actions/checkout@v3
+      - uses: ./.github/actions/setup-rust/
+        id: rust-setup
+      - uses: Swatinem/rust-cache@v2
+        name: Cache Rust and it's packages
+      - name: Cargo build
+        run: cargo build
+      - name: Cargo fmt
+        run: cargo fmt -- --check
+      - name: Cargo clippy
+        run: cargo clippy -- -D warnings
+      - name: Cargo test
+        run: cargo test
+
+  client:
+    runs-on: ubuntu-20.04
+    defaults:
+      run:
+        working-directory: crates/client
+    steps:
+      - uses: actions/checkout@v3
+      - uses: ./.github/actions/setup-rust/
+        id: rust-setup
+      - uses: Swatinem/rust-cache@v2
+        name: Cache Rust and it's packages
+      - name: Cargo build
+        run: cargo build
+      - name: Cargo fmt
+        run: cargo fmt -- --check
+      - name: Cargo clippy
+        run: cargo clippy -- -D warnings
+      - name: Cargo test
+        run: cargo test
+
+  test:
+    runs-on: ubuntu-20.04
+    defaults:
+      run:
+        working-directory: crates/test
+    steps:
+      - uses: actions/checkout@v3
+      - uses: ./.github/actions/setup-rust/
+        id: rust-setup
+      - uses: Swatinem/rust-cache@v2
+        name: Cache Rust and it's packages
+      - name: Install cargo packages
+        run: cargo install cargo-expand
+      - name: Cargo build
+        run: cargo build
+      - name: Cargo fmt
+        run: cargo fmt -- --check
+      - name: Cargo clippy
+        run: cargo clippy -- -D warnings
+      - name: Cargo test
+        run: cargo test
