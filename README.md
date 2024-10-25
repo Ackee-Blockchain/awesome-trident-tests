@@ -45,9 +45,6 @@ A collection of awesome Trident tests including links to guides and more.
 
 ### Solana Auditors Bootcamp Leaderboard
 
-Todo Bootcamp 2024
-
-1.
-2.
-3.
-4.
+1. [Fuzz Test by **0xm4ud**](https://github.com/Solana-Auditors-Bootcamp/fuzzing-with-trident-0xm4ud)
+2. [Fuzz Test by **chinepun**](https://github.com/Solana-Auditors-Bootcamp/fuzzing-with-trident-chinepun)
+3. [Fuzz Test by **thelezend**](https://github.com/Solana-Auditors-Bootcamp/fuzzing-with-trident-thelezend)
