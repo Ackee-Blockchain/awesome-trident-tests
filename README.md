@@ -21,30 +21,33 @@
 
 A collection of awesome Trident tests including links to guides and more.
 
-## Tests
+## Tests from
 
-### Ackee Blockchain Security
+### Public Audits
 
-- [Wormhole World ID Bridge & On-chain Template](https://github.com/Ackee-Blockchain/wormhole-world-id-fuzzing)
-
-
-## Guides
+- Wormhole World ID [Bridge & On-chain Template Fuzzing](https://github.com/Ackee-Blockchain/wormhole-world-id-fuzzing)
 
 ### School of Solana
 
 - Trident 0.6.0: [Fuzz Test Example for Trident Fuzzer](https://github.com/Ackee-Blockchain/sos-trident/tree/fuzz-tests) - [Video guide](https://youtu.be/5Lq8iEbMFbs?si=k28P8U1NEQcDM9_P)
-
 
 ### Solana Auditors Bootcamp
 
 - Trident 0.7.0: [Trident Lesson I](https://github.com/Ackee-Blockchain/Solana-Auditors-Bootcamp/tree/76e61fef431de5059a3aca790729b70298d0c147/Lesson-3) - [Video guide](https://youtu.be/5JRVnxGW8kc?si=mFsvZplAFhDiwOWX)
 - Trident 0.7.0: [Trident Lesson II](https://github.com/Ackee-Blockchain/Solana-Auditors-Bootcamp/tree/76e61fef431de5059a3aca790729b70298d0c147/Lesson-4) - [Video guide](https://youtu.be/gMk6hm0x44M?si=1S-iu7aMniP5t54Q)
 
-
-## Community
-
 ### Solana Auditors Bootcamp Leaderboard
 
-1. [Raydium CP Swap fuzz test](./solana-auditors-bootcamp-fuzz-tests/fuzzing-with-trident-0xm4ud/) by [**0xm4ud**](https://github.com/0xm4ud)
-2. [Raydium CP Swap fuzz test](./solana-auditors-bootcamp-fuzz-tests/fuzzing-with-trident-chinepun/) by [**chinepun**](https://github.com/chinepun)
-3. [Jupyter Lock fuzz test](./solana-auditors-bootcamp-fuzz-tests/fuzzing-with-trident-thelezend/) by [**thelezend**](https://github.com/thelezend)
+- Trident 0.X.0: 🥇 [Raydium CP Swap fuzz test](./solana-auditors-bootcamp-fuzz-tests/fuzzing-with-trident-0xm4ud/) by [0xm4ud](https://github.com/0xm4ud)
+- Trident 0.X.0: 🥈 [Jupyter Lock fuzz test](./solana-auditors-bootcamp-fuzz-tests/fuzzing-with-trident-thelezend/) by [thelezend](https://github.com/thelezend)
+- Trident 0.X.0: 🥉 X by [d1cetheroller](https://github.com/chinepun)
+- Trident 0.X.0: 🥉 [Raydium CP Swap fuzz test](./solana-auditors-bootcamp-fuzz-tests/fuzzing-with-trident-chinepun/) by [chinepun](https://github.com/chinepun)
+- Trident 0.X.0: X by [X](https://github.com/X)
+- Trident 0.X.0: X by [X](https://github.com/X)
+- Trident 0.X.0: X by [X](https://github.com/X)
+- Trident 0.X.0: X by [X](https://github.com/X)
+- Trident 0.X.0: X by [X](https://github.com/X)
+- Trident 0.X.0: X by [X](https://github.com/X)
+- Trident 0.X.0: X by [X](https://github.com/X)
+
+
