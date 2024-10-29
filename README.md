@@ -38,10 +38,10 @@ A collection of awesome Trident tests including links to guides and more.
 
 ### Solana Auditors Bootcamp Leaderboard
 
-- Trident 0.X.0: 🥇 [Raydium CP Swap fuzz test](./solana-auditors-bootcamp-fuzz-tests/fuzzing-with-trident-0xm4ud/) by [0xm4ud](https://github.com/0xm4ud)
-- Trident 0.X.0: 🥈 [Jupyter Lock fuzz test](./solana-auditors-bootcamp-fuzz-tests/fuzzing-with-trident-thelezend/) by [thelezend](https://github.com/thelezend)
-- Trident 0.X.0: 🥉 X by [d1cetheroller](https://github.com/chinepun)
-- Trident 0.X.0: 🥉 [Raydium CP Swap fuzz test](./solana-auditors-bootcamp-fuzz-tests/fuzzing-with-trident-chinepun/) by [chinepun](https://github.com/chinepun)
+- Trident 0.7.0: 🥇 [Raydium CP Swap fuzz test](./solana-auditors-bootcamp-fuzz-tests/2024/raydium-cp-swap-by-0xm4ud/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/) by [0xm4ud](https://github.com/0xm4ud)
+- Trident 0.7.0: 🥈 [Raydium CP Swap fuzz test](./solana-auditors-bootcamp-fuzz-tests/2024/raydium-cp-swap-by-chinepun/project-fuzzing/raydium-cp-swap/trident-tests/fuzz_tests/) by [chinepun](https://github.com/chinepun)
+- Trident 0.7.0: 🥉 X by [d1cetheroller](https://github.com/chinepun)
+- Trident 0.7.0: 🥉 [Jupyter Lock fuzz test](./solana-auditors-bootcamp-fuzz-tests/2024/jupyter-lock-by-thelezend/project-fuzzing/trident-tests/fuzz_tests/) by [thelezend](https://github.com/thelezend)
 - Trident 0.X.0: X by [X](https://github.com/X)
 - Trident 0.X.0: X by [X](https://github.com/X)
 - Trident 0.X.0: X by [X](https://github.com/X)
@@ -49,5 +49,3 @@ A collection of awesome Trident tests including links to guides and more.
 - Trident 0.X.0: X by [X](https://github.com/X)
 - Trident 0.X.0: X by [X](https://github.com/X)
 - Trident 0.X.0: X by [X](https://github.com/X)
-
-
