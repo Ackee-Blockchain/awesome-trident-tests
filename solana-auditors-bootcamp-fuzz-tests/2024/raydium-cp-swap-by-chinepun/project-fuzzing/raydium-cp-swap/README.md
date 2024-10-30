@@ -1,31 +1,16 @@
-# raydium-cp-swap
+<p align="left">
+  <img height="100" width="100" src="https://abchprod.wpengine.com/wp-content/uploads/2024/05/Trident-Color.png" alt="Trident"/>
+</p>
 
-A revamped constant product AMM program optimized for straightforward pool deployment along with additional features and integrations:
-- No Openbook market ID is required for pool creation
-- Token22 is supported
-- Built-in price oracle
-- Optimized in Anchor
+# Trident Tests for Raydium CP Swap
+This repository serves as an example of tests written with the Solana Fuzzing Framework [Trident](https://github.com/Ackee-Blockchain/trident).
 
-The program has been audited by [MadShield](https://www.madshield.xyz/). The report can be found [here](https://github.com/raydium-io/raydium-docs/tree/master/audit/MadShield%20Q1%202024).
 
-The program assets are in-scope for Raydium’s [Immunefi bug bounty program](https://immunefi.com/bug-bounty/raydium/).
+## Setup
 
-## Environment Setup
+1. Clone this repository
+2. Install Trident and required dependencies with the help of this [guide](https://ackee.xyz/trident/docs/0.7.0/getting-started/getting-started/)
+3. Use `--version` to specify Trident version during the installation `cargo install trident-cli --version 0.X.0`
+4. Use `trident fuzz run <TARGET_NAME>` (e.g., fuzz_0) to run the fuzz test
 
-1. Install Rust.
-2. Install Solana and then run solana-keygen new to create a keypair at the default location.
-3. Install Anchor.
-
-## Quickstart
-
-Clone the repository and test the program.
-
-```shell
-
-git clone https://github.com/raydium-io/raydium-cp-swap
-cd raydium-cp-swap && anchor test
-```
-
-## License
-
-Raydium constant product swap is licensed under the Apache License, Version 2.0.
+Tested with `trident` version `0.7.0`. Fuzz tests are located inside [fuzz_tests](./trident-tests/fuzz_tests/) folder.

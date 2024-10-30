@@ -1,7 +1,16 @@
-## Setup Config
-solana-cargo-build-sbf 1.18.18
-platform-tools v1.41
-rustc 1.75.0
-anchor-cli 0.30.1
+<p align="left">
+  <img height="100" width="100" src="https://abchprod.wpengine.com/wp-content/uploads/2024/05/Trident-Color.png" alt="Trident"/>
+</p>
 
-rustc 1.79.0 (129f3b996 2024-06-10)
+# Trident Tests for Zeta-Chain
+This repository serves as an example of tests written with the Solana Fuzzing Framework [Trident](https://github.com/Ackee-Blockchain/trident).
+
+
+## Setup
+
+1. Clone this repository
+2. Install Trident and required dependencies with the help of this [guide](https://ackee.xyz/trident/docs/0.7.0/getting-started/getting-started/)
+3. Use `--version` to specify Trident version during the installation `cargo install trident-cli --version 0.X.0`
+4. Use `trident fuzz run <TARGET_NAME>` (e.g., fuzz_0) to run the fuzz test
+
+Tested with `trident` version `0.7.0`. Fuzz tests are located inside [fuzz_tests](./trident-tests/fuzz_tests/) folder.
