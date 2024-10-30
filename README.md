@@ -33,7 +33,8 @@ For dev help open a support ticket in our [Discord](https://discord.gg/x7qXXnGCs
 
 ### Solana Auditors Bootcamp Leaderboard
 
-Fuzz tests from devs hacking notable protocols during Ackee's Bootcamp
+>[!NOTE]
+>Fuzz tests from devs hacking notable protocols during Ackee's [Bootcamp](https://ackee.xyz/solana-auditors-bootcamp).
 
 - Trident 0.7.0: 🥇 [Raydium CP Swap fuzz test](./solana-auditors-bootcamp-fuzz-tests/2024/raydium-cp-swap-by-0xm4ud/project-fuzzing/raydium-cp-swap/) by [0xm4ud](https://github.com/0xm4ud)
 - Trident 0.7.0: 🥈 [Raydium CP Swap fuzz test](./solana-auditors-bootcamp-fuzz-tests/2024/raydium-cp-swap-by-chinepun/project-fuzzing/raydium-cp-swap/) by [chinepun](https://github.com/chinepun)
