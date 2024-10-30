@@ -10,16 +10,11 @@
   <img height="100" width="100" src="https://abchprod.wpengine.com/wp-content/uploads/2024/05/Trident-Color.png" alt="Trident"/>
 </p>
 
-<a href="https://discord.gg/urRbxVcMrB" target="_blank" rel="noopener noreferrer">
-   <picture>
-     <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/discord/867746290678104064?colorA=21262d&colorB=0000FF&style=flat">
-     <img src="https://img.shields.io/discord/867746290678104064?colorA=f6f8fa&colorB=0000FF&style=flat" alt="dev-help">
-   </picture>
- </a>
+# Awesome Trident [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-# Awesome Trident Tests [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+A collection of awesome Trident tests including links to guides and more. 
 
-A collection of awesome Trident tests including links to guides and more.
+For dev help open a support ticket in our [Discord](https://discord.gg/x7qXXnGCsa).
 
 ## Tests from
 
